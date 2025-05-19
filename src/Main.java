@@ -34,7 +34,7 @@ public class Main {
                     employeeWageComputation.calculateMonthlyWage();
                     break;
                 case 5:
-                    employeeWageComputation.calculateWageTillCondition();
+                    EmployeeWageComputation.calculateWageTillCondition();
                     break;
                 case 6:
                     System.out.println("Exiting program.");
@@ -100,7 +100,7 @@ class EmployeeWageComputation {
 
         System.out.println("\nTotal Monthly Wage: ₹" + totalWage);
     }
-    void calculateWageTillCondition() {
+    static void calculateWageTillCondition() {
         int totalWorkingHours = 0;
         int totalWorkingDays = 0;
         int totalWage = 0;
@@ -132,6 +132,4 @@ class EmployeeWageComputation {
         System.out.println("Total Working Hours: " + totalWorkingHours);
         System.out.println("Total Wage for the Month: ₹" + totalWage);
     }
-
-
 }
