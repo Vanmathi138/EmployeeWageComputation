@@ -6,41 +6,41 @@ public class Main {
                 "Wage Computation" +
                 "Program on Master Branch");
         EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
-        employeeWageComputation.checkAttendance();
+        employeeWageComputation.calculateMonthlyWage();
 
 
     }
 }
 class EmployeeWageComputation {
-    public static final int is_present = 0;
-    public static final int wage_per_hour = 20;
-    public static final int full_day_hour = 1;
-    public static final int part_time_wage = 2;
+    public static final int IS_PART_TIME = 1;
+    public static final int IS_FULL_TIME = 2;
+    public static final int WAGE_PER_HOUR = 20;
+    public static final int WORKING_DAYS_PER_MONTH = 20;
 
-    void checkAttendance(){
-        int  empCheck =(int) Math.floor(Math.random()*10)%3;
+    public  void calculateMonthlyWage() {
+        int totalWage = 0;
 
-        String status = "";
-        int empHours = 0;
+        for (int day = 1; day <= WORKING_DAYS_PER_MONTH; day++) {
+            int empHours = 0;
+            int empCheck = (int) Math.floor(Math.random() * 10) % 3;
 
-        switch (empCheck){
-            case full_day_hour :
-                empHours = 8;
-                status = "Full-Day";
-                break;
-            case part_time_wage:
-                empHours = 8;
-                status = "Part-Time";
-                break;
-            default:
-                empHours = 0;
-                status = "absent";
+            switch (empCheck) {
+                case IS_PART_TIME:
+                    empHours = 4;
+                    break;
+                case IS_FULL_TIME:
+                    empHours = 8;
+                    break;
+                default:
+                    empHours = 0;
+            }
+
+            int dailyWage = empHours * WAGE_PER_HOUR;
+            totalWage += dailyWage;
+
+            System.out.println("Day " + day + ": Hours Worked = " + empHours + ", Daily Wage = ₹" + dailyWage);
         }
 
-        int dailyWage = empHours * wage_per_hour;
-        System.out.println("Employee Status: " + status);
-        System.out.println("Employee Hours: " + empHours);
-        System.out.println("Daily Wage: ₹" + dailyWage);
-
+        System.out.println("\nTotal Monthly Wage: ₹" + totalWage);
     }
 }
