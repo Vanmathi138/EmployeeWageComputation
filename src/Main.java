@@ -1,45 +1,68 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to Employee" +
-                "Wage Computation" +
-                "Program on Master Branch");
-        EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
-        employeeWageComputation.checkAttendance();
-        employeeWageComputation.partTimeEmployeeWage();
+        System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
 
+        Scanner scanner = new Scanner(System.in);
+        EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
+
+        while (true) {
+            System.out.println("\nSelect Option:");
+            System.out.println("1. Check Attendance of employee");
+            System.out.println("2. Calculate daily wage of employee");
+            System.out.println("3. Calculate part time wage of employee");
+            System.out.println("4. Calculate monthly wage");
+            System.out.println("5. Exit");
+            System.out.print("Enter your option: ");
+            int option = scanner.nextInt();
+
+            System.out.println();
+
+            switch (option) {
+                case 1:
+                    employeeWageComputation.checkAttendance();
+                    break;
+                case 2:
+                    employeeWageComputation.calculateDailyWage();
+                    break;
+                case 3:
+                    employeeWageComputation.calculatePartTimeWage();
+                    break;
+                case 5:
+                    System.out.println("Exiting program.");
+                    return;
+                default:
+                    System.out.println("Invalid option!");
+            }
+        }
     }
 }
+
 class EmployeeWageComputation {
     public static final int is_present = 1;
-    public static final int wage_per_hour = 20;
-    public static final int full_day_hour = 8;
-    public static final int part_time_wage = 8;
+    public static final int wagePerHour = 20;
 
     void checkAttendance(){
         double randomValue = Math.floor(Math.random()*10)%2;
         int attendance = (int) randomValue;
 
         if(attendance == is_present){
-            int dailyEmployeeWage = wage_per_hour * full_day_hour;
-            System.out.println("Employee is present.\n"
-                    +"Daily wage of Employee: "+dailyEmployeeWage);
-        }else {
-            System.out.println("Employee is absent");
-            System.out.println("Daily Wage of Employee: ₹0");
-        }
-    }
-    void partTimeEmployeeWage(){
-        double randomValue = Math.floor(Math.random()*10)%2;
-        int attendance = (int) randomValue;
-        if (attendance ==  is_present){
-            int partTimeWage = part_time_wage * wage_per_hour;
             System.out.println("Employee is present");
-            System.out.println("Part time wage of employee: "+partTimeWage);
         }else {
             System.out.println("Employee is absent");
-            System.out.println("Part time wage of employee: ₹0");
         }
     }
+    void calculateDailyWage(){
+        int fullDayHour = 8;
+        int dailyWage = fullDayHour * wagePerHour;
+        System.out.println("Daily Wage of Full-Time Employee = ₹" + dailyWage);
+    }
+    void calculatePartTimeWage(){
+        int partTimeHour = 4;
+        int partTimeWage = partTimeHour * wagePerHour;
+        System.out.println("Daily Wage of Part-Time Employee = ₹" + partTimeWage);
+    }
+
+
 }
