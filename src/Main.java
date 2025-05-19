@@ -58,6 +58,7 @@ class EmployeeWageComputation {
         int dailyWage = fullDayHour * wagePerHour;
         System.out.println("Daily Wage of Full-Time Employee = ₹" + dailyWage);
     }
+
     void calculatePartTimeWage(){
         int partTimeHour = 4;
         int partTimeWage = partTimeHour * wagePerHour;
