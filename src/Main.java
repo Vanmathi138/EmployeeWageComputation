@@ -23,6 +23,9 @@ public class Main {
                 case 1:
                     employeeWageComputation.checkAttendance();
                     break;
+                case 2:
+                    employeeWageComputation.calculateDailyWage();
+                    break;
                 case 5:
                     System.out.println("Exiting program.");
                     return;
@@ -35,6 +38,8 @@ public class Main {
 
 class EmployeeWageComputation {
     public static final int is_present = 1;
+    public static final int wagePerHour = 20;
+
     void checkAttendance(){
         double randomValue = Math.floor(Math.random()*10)%2;
         int attendance = (int) randomValue;
@@ -45,4 +50,10 @@ class EmployeeWageComputation {
             System.out.println("Employee is absent");
         }
     }
+    void calculateDailyWage(){
+        int fullDayHour = 8;
+        int dailyWage = fullDayHour * wagePerHour;
+        System.out.println("Daily Wage of Full-Time Employee = ₹" + dailyWage);
+    }
+
 }
