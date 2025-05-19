@@ -1,4 +1,5 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ïšÀÁÿÿÿÿÿ8ÚĞ¢ëí2J$109d62ff-6729-46a2-a12f-4455dd5871b5
-T
-java:S6126"2Replace this String concatenation with Text block.(ïšÀÁÿÿÿÿÿ8ƒ£¤ëí2
+r	java:S106"+Replace this use of System.out by a logger.(¸·®µşÿÿÿÿ8¾®¸î2J$25f9f78d-37fd-421b-ae28-3babdf8fc30e
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï”ÕÌ8¬¯¸î2J$f55740bb-ab20-41c9-b120-99bb68d6f21d
+r	java:S106"+Replace this use of System.out by a logger.(õ–×üÿÿÿÿ8»¯¸î2J$eeaf2609-8445-4b7d-b520-3f96e1a60679
+m	java:S106"+Replace this use of System.out by a logger.(¥Ú°8Ë¯¸î2J$af44af31-9517-4802-97be-a2be7e5d9008
