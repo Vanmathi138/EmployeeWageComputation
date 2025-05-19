@@ -29,6 +29,9 @@ public class Main {
                 case 3:
                     employeeWageComputation.calculatePartTimeWage();
                     break;
+                case 4:
+                    employeeWageComputation.calculateMonthlyWage();
+                    break;
                 case 5:
                     System.out.println("Exiting program.");
                     return;
@@ -40,8 +43,11 @@ public class Main {
 }
 
 class EmployeeWageComputation {
-    public static final int is_present = 1;
-    public static final int wagePerHour = 20;
+    public static final int is_present = 0;
+    public  static final int is_part_time = 1;
+    public static final int is_full_time =2;
+    public static final int wagePerHour = 8;
+    public static final int WORKING_DAYS_PER_MONTH = 20;
 
     void checkAttendance(){
         double randomValue = Math.floor(Math.random()*10)%2;
@@ -63,6 +69,32 @@ class EmployeeWageComputation {
         int partTimeHour = 4;
         int partTimeWage = partTimeHour * wagePerHour;
         System.out.println("Daily Wage of Part-Time Employee = ₹" + partTimeWage);
+    }
+    void calculateMonthlyWage() {
+        int totalWage = 0;
+
+        for (int day = 1; day <= WORKING_DAYS_PER_MONTH; day++) {
+            int empHours = 0;
+            int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+
+            switch (empCheck) {
+                case is_part_time:
+                    empHours = 4;
+                    break;
+                case is_full_time:
+                    empHours = 8;
+                    break;
+                default:
+                    empHours = 0;
+            }
+
+            int dailyWage = empHours * wagePerHour;
+            totalWage += dailyWage;
+
+            System.out.println("Day " + day + ": Hours Worked = " + empHours + ", Daily Wage = ₹" + dailyWage);
+        }
+
+        System.out.println("\nTotal Monthly Wage: ₹" + totalWage);
     }
 
 

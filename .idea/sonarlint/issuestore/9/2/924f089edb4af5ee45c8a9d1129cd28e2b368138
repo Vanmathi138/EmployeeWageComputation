@@ -1,18 +1,24 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(×Ö»ûÿÿÿÿ8©ññ¼î2
-L	java:S106"+Replace this use of System.out by a logger.(ü²óĞşÿÿÿÿ8¹ññ¼î2
-L	java:S106"+Replace this use of System.out by a logger.(üÈÉ¬ÿÿÿÿÿ8¹ññ¼î2
-G	java:S106"+Replace this use of System.out by a logger.(œšôˆ8¹ññ¼î2
-G	java:S106"+Replace this use of System.out by a logger.(öå¾ì8¹ññ¼î2
-L	java:S106"+Replace this use of System.out by a logger.(«•² ıÿÿÿÿ8¹ññ¼î2
-G	java:S106"+Replace this use of System.out by a logger.(š”¹Ï8Éññ¼î2
-G	java:S106"+Replace this use of System.out by a logger.(¾Óô‘8Éññ¼î2
-L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8Éññ¼î2
-L	java:S106!"+Replace this use of System.out by a logger.(™¨Šüÿÿÿÿ8Éññ¼î2
-L	java:S106$"+Replace this use of System.out by a logger.(üö®¿úÿÿÿÿ8Éññ¼î2
-v	java:S115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï”ÕÌ8Éññ¼î2
-v	java:S115,"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ı«óİ8Éññ¼î2
-L	java:S1063"+Replace this use of System.out by a logger.(õ–×üÿÿÿÿ8Øññ¼î2
-G	java:S1065"+Replace this use of System.out by a logger.(¥Ú°8Øññ¼î2
-F	java:S106;"+Replace this use of System.out by a logger.(‘¥äE8Øññ¼î2
-F	java:S106A"+Replace this use of System.out by a logger.(†øÊ8Øññ¼î2
+r	java:S106"+Replace this use of System.out by a logger.(×Ö»ûÿÿÿÿ8†€“½î2J$c0581494-05b2-4b06-828b-65c865bb96be
+r	java:S106"+Replace this use of System.out by a logger.(ü²óĞşÿÿÿÿ8€“½î2J$7c634e39-ebc6-41b9-8898-e81634ac5594
+r	java:S106"+Replace this use of System.out by a logger.(üÈÉ¬ÿÿÿÿÿ8€“½î2J$7f1a80d2-ff97-491a-adc1-b62eb9447b81
+m	java:S106"+Replace this use of System.out by a logger.(œšôˆ8€“½î2J$bcf5e0bd-6a35-4161-ad8a-d8e3015c570b
+m	java:S106"+Replace this use of System.out by a logger.(öå¾ì8”€“½î2J$c12ba608-30ff-462f-b054-a9c39abd3302
+r	java:S106"+Replace this use of System.out by a logger.(«•² ıÿÿÿÿ8•€“½î2J$ff6c4419-c564-4208-b819-be1d91b91432
+m	java:S106"+Replace this use of System.out by a logger.(š”¹Ï8–€“½î2J$be112835-b197-49a3-8e31-5bc5922fb3f6
+m	java:S106"+Replace this use of System.out by a logger.(¾Óô‘8—€“½î2J$6c304aa5-1ea5-4766-b8e1-f83bba4c005c
+r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8˜€“½î2J$2653435e-08c0-4dce-8411-95610712dd29
+r	java:S106$"+Replace this use of System.out by a logger.(™¨Šüÿÿÿÿ8›€“½î2J$602c31ad-c635-411b-abab-0a2bd7777288
+r	java:S106'"+Replace this use of System.out by a logger.(üö®¿úÿÿÿÿ8œ€“½î2J$16767757-0362-4b6b-b4c7-0c812017890a
+¡	java:S115."ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«Ş¬øÿÿÿÿ8€“½î2J$1ffda5c7-ee78-47a9-9cce-59aab6d3bea2
+œ	java:S115/"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«ãñƒ8€Ğ›½î2J$d42fe7dc-e853-433d-a934-70c8d5322f6b
+¡	java:S1150"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ùË³øÿÿÿÿ8Öß½î2J$5467c46b-016e-4310-92a2-b8490fbdd6c5
+›	java:S1151"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ª¦Æ58Öß½î2J$86dba1cf-3385-4eda-85dc-29710793dbb4
+r	java:S1069"+Replace this use of System.out by a logger.(õ–×üÿÿÿÿ8Öß½î2J$08be9e80-e3b9-47c4-b4d5-076eab0d2bc3
+m	java:S106;"+Replace this use of System.out by a logger.(¥Ú°8åß½î2J$bce1983c-0994-4ff2-bf3a-89d3c9629258
+l	java:S106A"+Replace this use of System.out by a logger.(‘¥äE8õß½î2J$35027b17-dc8c-4eda-9158-bf3f73c83e0c
+l	java:S106G"+Replace this use of System.out by a logger.(†øÊ8õß½î2J$26d3a1b0-42ce-41d9-8cdb-79278f0a76bd
+l
+java:S2140N")Use "java.util.Random.nextInt()" instead.(ıÔµÊ8õß½î2J$3a237d65-027e-462e-b503-2ba35e0b0848
+m	java:S106^"+Replace this use of System.out by a logger.(‚öè·8õß½î2J$25505ee7-2c66-4f3d-ab23-e70d6e0d23d8
+r	java:S106a"+Replace this use of System.out by a logger.(±§ÇËıÿÿÿÿ8…à½î2J$23390cc1-c607-40a8-82c6-0cb5120144ff
