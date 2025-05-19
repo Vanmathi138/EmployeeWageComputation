@@ -26,6 +26,9 @@ public class Main {
                 case 2:
                     employeeWageComputation.calculateDailyWage();
                     break;
+                case 3:
+                    employeeWageComputation.calculatePartTimeWage();
+                    break;
                 case 5:
                     System.out.println("Exiting program.");
                     return;
@@ -55,5 +58,12 @@ class EmployeeWageComputation {
         int dailyWage = fullDayHour * wagePerHour;
         System.out.println("Daily Wage of Full-Time Employee = ₹" + dailyWage);
     }
+
+    void calculatePartTimeWage(){
+        int partTimeHour = 4;
+        int partTimeWage = partTimeHour * wagePerHour;
+        System.out.println("Daily Wage of Part-Time Employee = ₹" + partTimeWage);
+    }
+
 
 }
