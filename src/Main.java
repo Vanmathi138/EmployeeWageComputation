@@ -13,7 +13,8 @@ public class Main {
             System.out.println("2. Calculate daily wage of employee");
             System.out.println("3. Calculate part time wage of employee");
             System.out.println("4. Calculate monthly wage");
-            System.out.println("5. Exit");
+            System.out.println("5. Calculate Wages till a condition of total working hours or days is reached for a month - Assume 100 hours");
+            System.out.println("6. Exit");
             System.out.print("Enter your option: ");
             int option = scanner.nextInt();
 
@@ -33,6 +34,9 @@ public class Main {
                     employeeWageComputation.calculateMonthlyWage();
                     break;
                 case 5:
+                    employeeWageComputation.calculateWageTillCondition();
+                    break;
+                case 6:
                     System.out.println("Exiting program.");
                     return;
                 default:
@@ -66,7 +70,7 @@ class EmployeeWageComputation {
     }
 
     void calculatePartTimeWage(){
-        int partTimeHour = 4;
+        int partTimeHour = 8;
         int partTimeWage = partTimeHour * wagePerHour;
         System.out.println("Daily Wage of Part-Time Employee = ₹" + partTimeWage);
     }
@@ -79,7 +83,7 @@ class EmployeeWageComputation {
 
             switch (empCheck) {
                 case is_part_time:
-                    empHours = 4;
+                    empHours = 8;
                     break;
                 case is_full_time:
                     empHours = 8;
@@ -95,6 +99,38 @@ class EmployeeWageComputation {
         }
 
         System.out.println("\nTotal Monthly Wage: ₹" + totalWage);
+    }
+    void calculateWageTillCondition() {
+        int totalWorkingHours = 0;
+        int totalWorkingDays = 0;
+        int totalWage = 0;
+
+        while (totalWorkingHours < 100 && totalWorkingDays < 20) {
+            int empHours = 0;
+            int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+
+            switch (empCheck) {
+                case is_part_time:
+                    empHours = 8;
+                    break;
+                case is_full_time:
+                    empHours = 8;
+                    break;
+                default:
+                    empHours = 0;
+            }
+
+            totalWorkingDays++;
+            totalWorkingHours += empHours;
+            int dailyWage = empHours * wagePerHour;
+            totalWage += dailyWage;
+
+            System.out.println("Day " + totalWorkingDays + ": Worked " + empHours + " hours, Daily Wage = ₹" + dailyWage);
+        }
+
+        System.out.println("\nTotal Working Days: " + totalWorkingDays);
+        System.out.println("Total Working Hours: " + totalWorkingHours);
+        System.out.println("Total Wage for the Month: ₹" + totalWage);
     }
 
 
