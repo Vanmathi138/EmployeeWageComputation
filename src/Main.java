@@ -7,20 +7,39 @@ public class Main {
                 "Program on Master Branch");
         EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
         employeeWageComputation.checkAttendance();
+        employeeWageComputation.partTimeEmployeeWage();
 
     }
 }
 class EmployeeWageComputation {
     public static final int is_present = 1;
+    public static final int wage_per_hour = 20;
+    public static final int full_day_hour = 8;
+    public static final int part_time_wage = 8;
 
     void checkAttendance(){
         double randomValue = Math.floor(Math.random()*10)%2;
         int attendance = (int) randomValue;
 
         if(attendance == is_present){
-            System.out.println("Employee is present");
+            int dailyEmployeeWage = wage_per_hour * full_day_hour;
+            System.out.println("Employee is present.\n"
+                    +"Daily wage of Employee: "+dailyEmployeeWage);
         }else {
             System.out.println("Employee is absent");
+            System.out.println("Daily Wage of Employee: ₹0");
+        }
+    }
+    void partTimeEmployeeWage(){
+        double randomValue = Math.floor(Math.random()*10)%2;
+        int attendance = (int) randomValue;
+        if (attendance ==  is_present){
+            int partTimeWage = part_time_wage * wage_per_hour;
+            System.out.println("Employee is present");
+            System.out.println("Part time wage of employee: "+partTimeWage);
+        }else {
+            System.out.println("Employee is absent");
+            System.out.println("Part time wage of employee: ₹0");
         }
     }
 }

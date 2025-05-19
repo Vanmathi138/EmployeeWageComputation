@@ -1,5 +1,13 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(¸·®µşÿÿÿÿ8¾®¸î2J$25f9f78d-37fd-421b-ae28-3babdf8fc30e
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï”ÕÌ8¬¯¸î2J$f55740bb-ab20-41c9-b120-99bb68d6f21d
-r	java:S106"+Replace this use of System.out by a logger.(õ–×üÿÿÿÿ8»¯¸î2J$eeaf2609-8445-4b7d-b520-3f96e1a60679
-m	java:S106"+Replace this use of System.out by a logger.(¥Ú°8Ë¯¸î2J$af44af31-9517-4802-97be-a2be7e5d9008
+r	java:S106"+Replace this use of System.out by a logger.(¸·®µşÿÿÿÿ8è¹î2J$7f10cab6-648a-4b2e-9123-e85a280541fe
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï”ÕÌ8¬è¹î2J$81465b73-002d-4b3b-9095-8ad7711c8d9a
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’´8¬è¹î2J$102d7a58-5eca-42bb-9fcb-701be8d05797
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ó¶İñıÿÿÿÿ8¬è¹î2J$1e61c058-6590-486a-9c9e-011459b2c5d1
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.( ”™ 8¬è¹î2J$7825d3b2-0cba-4fb2-a1ae-2ee1ebc574b7
+r	java:S106"+Replace this use of System.out by a logger.(ñÀ¹˜ıÿÿÿÿ8Ìè¹î2J$5e62e3f2-1d7b-408b-a18b-439875bacec9
+m	java:S106"+Replace this use of System.out by a logger.(¥Ú°8Ìè¹î2J$8078d928-a830-4a1e-a5e9-987a80dc7a8d
+m	java:S106"+Replace this use of System.out by a logger.(Œ–‚á8Ìè¹î2J$aa5b95a7-f384-4cd9-ae18-120309951a94
+r	java:S106&"+Replace this use of System.out by a logger.(õ–×üÿÿÿÿ8Ìè¹î2J$fde89c3a-ceb4-47eb-8323-c47d3226f874
+m	java:S106'"+Replace this use of System.out by a logger.(çó’Ô8Ìè¹î2J$c051220f-e766-49e4-8362-ce41aca4858c
+m	java:S106)"+Replace this use of System.out by a logger.(¥Ú°8û”¹î2J$c8b61e3b-6c2a-47fe-b9be-19fdcdb96080
+m	java:S106*"+Replace this use of System.out by a logger.(ˆøæ¹8¤í¹î2J$4cc17075-837a-4315-a1c6-ff97f2731d27
