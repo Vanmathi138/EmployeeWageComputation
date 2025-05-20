@@ -7,6 +7,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
 
+        //use case 8
+        EmployeeWageComputation.computeEmployeeWage("TCS",20, 20, 100);
+        EmployeeWageComputation.computeEmployeeWage("BridgeLabz", 25, 22, 110);
+
         while (true) {
             System.out.println("\nSelect Option:");
             System.out.println("1. Check Attendance of employee");
@@ -42,6 +46,7 @@ public class Main {
                 default:
                     System.out.println("Invalid option!");
             }
+
         }
     }
 }
@@ -131,5 +136,40 @@ class EmployeeWageComputation {
         System.out.println("\nTotal Working Days: " + totalWorkingDays);
         System.out.println("Total Working Hours: " + totalWorkingHours);
         System.out.println("Total Wage for the Month: ₹" + totalWage);
+    }
+
+    public static void computeEmployeeWage(String company, int wagePerHour, int maxWorkingDays, int maxWorkingHours) {
+        int totalWorkingDays = 0;
+        int totalWorkingHours = 0;
+        int totalWage = 0;
+
+        while (totalWorkingDays < maxWorkingDays && totalWorkingHours < maxWorkingHours) {
+            int empHours = 0;
+            int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+
+            switch (empCheck) {
+                case 1: // Part time
+                    empHours = 4;
+                    break;
+                case 2: // Full time
+                    empHours = 8;
+                    break;
+                default:
+                    empHours = 0;
+            }
+
+            totalWorkingDays++;
+            totalWorkingHours += empHours;
+            int dailyWage = empHours * wagePerHour;
+            totalWage += dailyWage;
+
+            System.out.println(company + " - Day " + totalWorkingDays + ": Hours = " + empHours + ", Daily Wage = ₹" + dailyWage);
+        }
+
+        System.out.println("\nCompany: " + company);
+        System.out.println("Total Working Days: " + totalWorkingDays);
+        System.out.println("Total Working Hours: " + totalWorkingHours);
+        System.out.println("Total Wage: ₹" + totalWage);
+        System.out.println("-----------------------------------");
     }
 }
