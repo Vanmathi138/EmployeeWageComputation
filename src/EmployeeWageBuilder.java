@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
+
     private final ArrayList<CompanyEmpWage> companyEmpWageList;
 
     public EmployeeWageBuilder() {
@@ -15,10 +16,11 @@ public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
 
     @Override
     public void computeWages() {
-        for (CompanyEmpWage companyEmpWage : companyEmpWageList) {
-            int totalWage = computeWage(companyEmpWage);
-            companyEmpWage.setTotalWage(totalWage);
-            System.out.println(companyEmpWage);
+        for (CompanyEmpWage company : companyEmpWageList) {
+            int totalWage = computeWage(company);
+            company.setTotalWage(totalWage);
+            System.out.println(company);
+            System.out.println("Daily Wages for " + company.company + ": " + company.dailyWage + "\n");
         }
     }
 
@@ -34,20 +36,21 @@ public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
             switch (empCheck) {
                 case 1:
                     empHours = 4;
-                    break;  // Part-time
+                    break;  // part time
                 case 2:
                     empHours = 8;
-                    break;  // Full-time
+                    break;  // Fulltime
                 default:
                     empHours = 0;// Absent
             }
 
             totalHours += empHours;
             totalDays++;
-            int dailyWage = empHours * companyEmpWage.wagePerHour;
-            totalWage += dailyWage;
+            int dailyWages = empHours * companyEmpWage.wagePerHour;
+            totalWage += dailyWages;
 
-            System.out.println(companyEmpWage.company + " - Day " + totalDays + ": Hours Worked = " + empHours + ", Daily Wage = ₹" + dailyWage);
+            companyEmpWage.dailyWage.add(dailyWages);
+            System.out.println(companyEmpWage.company + " - Day " + totalDays + ": Hours Worked = " + empHours + ", Daily Wage = ₹" + dailyWages);
         }
 
         return totalWage;

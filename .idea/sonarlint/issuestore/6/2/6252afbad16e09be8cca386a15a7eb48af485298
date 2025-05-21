@@ -1,3 +1,11 @@
 
-r
-java:S1104"UMake totalWage a static final constant or non-public and provide accessors if needed.(êÀù®8¼‰áŠï2
+‹
+java:S1319
+"iThe type of "dailyWage" should be an interface such as "List" rather than the implementation "ArrayList".(§Õ–ıÿÿÿÿ8Ùåõ’ï2
+˜
+java:S1104	"UMake totalWage a static final constant or non-public and provide accessors if needed.(êÀù®8Î–õ’ï2J$f8f0f156-89f5-45b0-a014-0227fa812e85
+
+java:S1104
+"UMake dailyWage a static final constant or non-public and provide accessors if needed.(§Õ–ıÿÿÿÿ8Ñ–õ’ï2J$af1a247a-9f0a-4db5-9a6d-d4f47ff3f3c7
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÿåõ’ï2
