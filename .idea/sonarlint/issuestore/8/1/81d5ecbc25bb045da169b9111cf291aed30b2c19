@@ -1,5 +1,5 @@
 
-m	java:S106"+Replace this use of System.out by a logger.(ĞÇœÛ8±¾ÕŠï2J$44fdce76-3abd-4a2e-be12-892ede89459b
+m	java:S106"+Replace this use of System.out by a logger.(ĞÇœÛ8ğÈâŠï2J$44590491-1937-4322-97b4-a3494c7590ef
 l
-java:S2140")Use "java.util.Random.nextInt()" instead.(ıÔµÊ8ÿ¾ÕŠï2J$0c33ef79-fe21-422a-bc58-93dfbdba31c2
-m	java:S1060"+Replace this use of System.out by a logger.(ü†ê£8ğÈâŠï2J$09a756f9-6b5b-4827-a619-5e92e9dc024f
+java:S2140 ")Use "java.util.Random.nextInt()" instead.(ıÔµÊ8ÿ¾ÕŠï2J$5abba304-3967-4c5b-b955-9e8dce6fce07
+m	java:S1062"+Replace this use of System.out by a logger.(ü†ê£8Ñ©“‹ï2J$1bf005aa-6ed7-40b0-89df-8c15555cb88e
