@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
 
     private final ArrayList<CompanyEmpWage> companyEmpWageList;
+    private final HashMap<String, CompanyEmpWage> companyMap = new HashMap<>();
 
     public EmployeeWageBuilder() {
         companyEmpWageList = new ArrayList<>();
@@ -12,6 +14,7 @@ public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
     public void addCompanyEmpWage(String company, int wagePerHour, int maxWorkingDays, int maxWorkingHours) {
         CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, wagePerHour, maxWorkingDays, maxWorkingHours);
         companyEmpWageList.add(companyEmpWage);
+        companyMap.put(company,companyEmpWage);
     }
 
     @Override
@@ -54,5 +57,13 @@ public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
         }
 
         return totalWage;
+    }
+    public int getTotalWage(String companyName) {
+        if (companyMap.containsKey(companyName)) {
+            return companyMap.get(companyName).totalWage;
+        } else {
+            System.out.println("Company not found.");
+            return -1;
+        }
     }
 }
