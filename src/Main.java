@@ -4,9 +4,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
 
-        EmployeeWageBuilder employeeWageBuilder = new EmployeeWageBuilder("Wipro",20,24,75);
+        EmployeeWageBuilder wageBuilder = new EmployeeWageBuilder();
 
-        employeeWageBuilder.computeWage();
+        wageBuilder.addCompanyEmpWage("TCS", 20, 20, 100);
+        wageBuilder.addCompanyEmpWage("Infosys", 22, 22, 120);
+        wageBuilder.addCompanyEmpWage("Wipro", 18, 24, 110);
+
+        wageBuilder.computeWages();
+
         Scanner scanner = new Scanner(System.in);
         EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
 
