@@ -4,13 +4,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
 
-        EmployeeWageBuilderInterface wageBuilder = new EmployeeWageBuilder();
+        EmployeeWageBuilder empWageBuilder = new EmployeeWageBuilder();
 
+        empWageBuilder.addCompanyEmpWage("TCS", 20, 20, 100);
+        empWageBuilder.addCompanyEmpWage("Infosys", 25, 22, 110);
 
-        wageBuilder.addCompanyEmpWage("Amazon", 28, 22, 120);
-        wageBuilder.addCompanyEmpWage("Flipkart", 25, 24, 110);
-
-        wageBuilder.computeWages();
+        empWageBuilder.computeWages();
+        System.out.println("\nQueried Total Wage:");
+        System.out.println("TCS: ₹" + empWageBuilder.getTotalWage("TCS"));
+        System.out.println("Infosys: ₹" + empWageBuilder.getTotalWage("Infosys"));
+        System.out.println("Wipro: ₹" + empWageBuilder.getTotalWage("Wipro"));
 
         Scanner scanner = new Scanner(System.in);
         EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();

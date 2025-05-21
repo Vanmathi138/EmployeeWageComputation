@@ -1,6 +1,7 @@
 
-l	java:S106"+Replace this use of System.out by a logger.(ºÒ"8Ñ©“‹ï2J$eb5c8534-e7dc-4370-9f5f-ebae071d9643
-r	java:S106"+Replace this use of System.out by a logger.(ø¼ßÃùÿÿÿÿ8Á€û’ï2J$f664f51b-f267-46d9-91f0-9259788d750f
+l	java:S106"+Replace this use of System.out by a logger.(ºÒ"8Ü¹ï“ï2J$eb00c3b1-069a-46c3-81eb-3df4e3895f33
+r	java:S106"+Replace this use of System.out by a logger.(ø¼ßÃùÿÿÿÿ8Ü¹ï“ï2J$42b0f5e9-9605-42fd-a9e4-1340a3560477
 l
-java:S2140"")Use "java.util.Random.nextInt()" instead.(ıÔµÊ8ÿ¾ÕŠï2J$631d2a20-28aa-4dec-a28e-9c92be8eca71
-r	java:S1065"+Replace this use of System.out by a logger.(óÉñ½úÿÿÿÿ8¬±“ï2J$5800b9c9-d157-4ee0-a4b3-35d16652cd5c
+java:S2140%")Use "java.util.Random.nextInt()" instead.(ıÔµÊ8ä¹ï“ï2J$233830a4-8d7d-4828-86ab-f30b9ffba747
+r	java:S1068"+Replace this use of System.out by a logger.(óÉñ½úÿÿÿÿ8ì¹ï“ï2J$5eadab48-82d9-40a6-82b5-f2b864afa455
+L	java:S106A"+Replace this use of System.out by a logger.(§¯‰úûÿÿÿÿ8§µõ“ï2
