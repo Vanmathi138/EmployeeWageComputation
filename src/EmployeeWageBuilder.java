@@ -1,17 +1,19 @@
 import java.util.ArrayList;
 
-public class EmployeeWageBuilder {
+public class EmployeeWageBuilder implements EmployeeWageBuilderInterface{
     private final ArrayList<CompanyEmpWage> companyEmpWageList;
 
     public EmployeeWageBuilder() {
         companyEmpWageList = new ArrayList<>();
     }
 
+    @Override
     public void addCompanyEmpWage(String company, int wagePerHour, int maxWorkingDays, int maxWorkingHours) {
         CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, wagePerHour, maxWorkingDays, maxWorkingHours);
         companyEmpWageList.add(companyEmpWage);
     }
 
+    @Override
     public void computeWages() {
         for (CompanyEmpWage companyEmpWage : companyEmpWageList) {
             int totalWage = computeWage(companyEmpWage);
